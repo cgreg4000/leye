@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aba</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <!-- Container Start -->
+    <div id="container">
+        <!-- Header Start -->
+        <header>
+            <nav class="nav flexed-evenly">
+                <a href=""><img id="logo" src="imgs/Aba-Logo.png" alt="aba logo"></a>
+                <ul class="nav flexed-evenly" id="top-nav">
+                    <li><a href="">RESERVE</a></li>
+                    <li><a href="">MENU</a></li>
+                    <li><a href="">GROUP DINING</a></li>
+                    <li><a href="">EVENTS</a></li>
+                    <li><a href="">TEAM</a></li>
+                </ul>
+            </nav>
+            <div class="flexed" id="header-images">
+                <img id="header-image-1" src="imgs/up-47.jpg" alt="various dishes">
+                <img id="header-image-2" src="imgs/Aba_VillageSalad.jpg" alt="village salad">
+            </div>
+        </header>
+        <!-- Header End -->
+        <!-- Main Start -->
+        <main>
+            <!-- Reservation Start -->
+            <div id="reservation">
+                <h2 id="res-heading">MAKE A RESERVATION</h2>
+                <form action="" id="res-form">
+                    <input type="date" name="date" id="date" required>
+                    <select name="time" id="time" required>
+                        <option value="" selected disabled="disabled">Time</option>
+                        <option value="4:00 PM">4:00 PM</option>
+                        <option value="4:15 PM">4:15 PM</option>
+                        <option value="4:30 PM">4:30 PM</option>
+                        <option value="4:45 PM">4:45 PM</option>
+                        <option value="5:00 PM">5:00 PM</option>
+                        <option value="5:15 PM">5:15 PM</option>
+                        <option value="5:30 PM">5:30 PM</option>
+                        <option value="5:45 PM">5:45 PM</option>
+                        <option value="6:00 PM">6:00 PM</option>
+                        <option value="6:15 PM">6:15 PM</option>
+                        <option value="6:30 PM">6:30 PM</option>
+                        <option value="6:45 PM">6:45 PM</option>
+                        <option value="7:00 PM">7:00 PM</option>
+                        <option value="7:15 PM">7:15 PM</option>
+                        <option value="7:30 PM">7:30 PM</option>
+                        <option value="7:45 PM">7:45 PM</option>
+                        <option value="8:00 PM">8:00 PM</option>
+                        <option value="8:15 PM">8:15 PM</option>
+                        <option value="8:30 PM">8:30 PM</option>
+                        <option value="8:45 PM">8:45 PM</option>
+                        <option value="9:00 PM">9:00 PM</option>
+                        <option value="9:15 PM">9:15 PM</option>
+                        <option value="9:30 PM">9:30 PM</option>
+                        <option value="9:45 PM">9:45 PM</option>
+                        <option value="10:00 PM">10:00 PM</option>
+                    </select>
+                    <select name="people" id="people" required>
+                        <option value="" selected disabled="disabled">Guests</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5 People</option>
+                        <option value="6">6 People</option>
+                        <option value="7">7 People</option>
+                        <option value="8">8 People</option>
+                        <option value="" disabled="disabled">Please call for larger reservations</option>
+                    </select>
+                    <input class="res-buttons" type="submit" value="Find a Table">
+                </form>
+                <form action="" style="display: none;" id="customer-form">
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="Phone ###-###-####" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input class="res-buttons" type="submit" value="Enter Your Info">
+                </form>
+                <h2 style="display: none;" id="success">Your reservation has been saved!</h2>
+            </div>
+            <!-- Reservation End -->
+            <!-- Group Dining Start -->
+            <section class="flexed">
+                <div class="section-content">
+                    <h2>GROUP DINING AT ABA</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales
+                        cursus purus vitae tincidunt. Morbi luctus turpis metus, quis pulvinar tortor commodo sed. Duis
+                        eget lectus condimentum, pulvinar urna posuere, congue ex. Proin elementum rhoncus odio sed
+                        semper. Phasellus nec iaculis nunc. Orci varius natoque penatibus.</p>
+                    <a href="">PLAN YOUR PARTY</a>
+                </div>
+                <img src="imgs/up-35.jpg" alt="soup">
+            </section>
+            <!-- Group Dining End -->
+            <!-- Wine Dinner Start -->
+            <section class="flexed">
+                <img src="imgs/up-35.jpg" alt="soup">
+                <div class="section-content">
+                    <h2>WINE DINNER</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ante
+                        lectus, molestie eu eleifend a, dignissim quis sem. Integer et ornare massa. Ut efficitur sem
+                        mattis dolor congue aliquet. Maecenas aliquet, mi.</p>
+                    <p>June 13th, 2018 at 7pm</p>
+                    <a href="">LEARN MORE</a>
+                </div>
+            </section>
+            <!-- Wine Dinner End -->
+            <!-- About Start -->
+            <section class="flexed">
+                <div class="section-content">
+                    <h2>ABOUT ABA</h2>
+                    <p id="about-text">Aba is a restaurant with a rooftop patio located in
+                        Chicago's historic
+                        Fulton Market District. The is Chef CJ Jacobson's second restaurant with Lettuce Entertain You,
+                        and is an extension of Ema (mother in Hebrew) in River North. Aba, meaning father in Hebrew,
+                        will incorporate Ema's style of cooking with a larger influence of steak, raw and chilled
+                        seafood. The beverage program is crafted by Wine Director Ryan Arnold and Mixologist Liz Pearce
+                        and showcases Mediterranean-inspired rare wines and spirits.</p>
+                </div>
+                <img src="imgs/up-42.jpg" alt="leaf wraps">
+            </section>
+            <!-- About End -->
+        </main>
+        <!-- Main End -->
+        <!-- Footer Start -->
+        <footer>
+            <div class="flexed">
+                <div class="info"></div>
+                <div class="flexed info">
+                    <div id="hours">
+                        <h3>HOURS</h3>
+                        <p>Tues - Thurs 12pm- 10pm</p>
+                        <p>Fri 12pm - 1am</p>
+                        <p>Sat 11am - 1am</p>
+                        <p>Sun 10am - 9pm</p>
+                        <div>
+                            <h3 id="contact"><a href="">CONTACT</a></h3>
+                            <h3><a href="">NEWSLETTER</a></h3>
+                        </div>
+                    </div>
+                    <div id="locations">
+                        <h3>LOCATIONS</h3>
+                        <p>302 N Green Street,</p>
+                        <p>3rd Floor</p>
+                        <p>Chicago, IL 60607</p>
+                        <p id="number"><a href="tel:">773-645-1400</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom" class="flexed-evenly">
+                <ul id="bottom-nav" class="flexed">
+                    <li><a href="">FREQUENT DINER</a></li>
+                    <li><a href="">GIFT CARDS</a></li>
+                    <li><a href="">EMPLOYMENT</a></li>
+                    <li><a href="">LEYE.COM</a></li>
+                    <li><a href="">TERMS OF USE</a></li>
+                    <li><a href="">PRIVACY POLICY</a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+    <!-- Container End -->
+    <script src="script.js"></script>
+</body>
+
+</html>
